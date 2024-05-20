@@ -71,7 +71,7 @@ while True:
             send_command(ser, "enable")
             time.sleep(1)
         elif "AP" in resposta and "#" in resposta:
-            send_command(ser, "capwap ap controller ip address 138.185.35.23")
+            send_command(ser, "capwap ap controller ip address 'Insira aqui o ip da sua controladora.'")
             if "AP" in resposta and "#" in resposta and "!" in resposta:
                 break
         elif "Press RETURN to get started!" in resposta and not tecla_enter_enviada:
